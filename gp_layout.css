@@ -93,7 +93,7 @@ article {
         width: 100%;
     }
 
-    /* The comment aboev applies to the rest of these  */
+    /* The comment above applies to the rest of the styles listed below, the only difference being the class being affected and the specified witdh being applied to the class. */
     img.size2 {
         width: 60%;
     }

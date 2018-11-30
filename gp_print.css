@@ -17,6 +17,7 @@
 
 
 /* Hidden Objects */
+/* The selector below states that the nav with a class of horizontal, the footer, and the article will be affected by the styles listed within. The display none property states that elements will not be displayed on the page or in this case, when the user prints the page content. */
 nav.horizontal,
 footer,
 article {
@@ -24,15 +25,18 @@ article {
 }
 
 /* Comic Book Sheet Styles */
+/* The selector below states that the section with an id of sheet will be affected by the styles written. The width property sets the width of the element while the margin sets the margin space of the element. Since these styles will be applied when the page contents are being printed, absolute values such as inches are used. */
 section#sheet {
     width: 6in;
     margin: 0in auto;
 }
 
+/* The selector below states that the img with a class of size1 will be affected by the width property listed within.  */
 img.size1 {
     width: 5in;
 }
 
+/* The comment above applies to the rest of the selector listed below, the only difference being the class being affected and the width being applied to it. */
 img.size2 {
     width: 3in;
 }
