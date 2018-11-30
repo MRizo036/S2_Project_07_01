@@ -22,6 +22,8 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/* Styles within this section will determine the flex layout of the content displaye on the webpage. */
+/* The selector below states that the body will have the display properties of a flex display layout. Along with that, the flex flow property defines the way in which object displayed on the bage will flow. Row states that the objects should be displayed form left to right. Wrap states that the object will wrap onto a new row. The addition of the webkit property allows for the layout to extend to more browsers.*/
 body {
     display: -webkit-flex;
     display: flex;
@@ -29,11 +31,13 @@ body {
     flex-flow: row wrap;
 }
 
+/* The selector states that the propertoes listed will be applied to the section elememt with an id of sheet. The flex property defines the growth, shirink, and basis size of the element. */
 section#sheet {
     -webkit-flex: 3 1 301px;
     flex: 3 1 301px;
 }
 
+/* The comment above applies to this as well, the only difference being that these properties are affecting the article element. */
 article {
     -webkit-flex: 1 3 180px;
     flex: 1 3 180px;
@@ -43,15 +47,20 @@ article {
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
+/* The media query listed states that the styles within will be applied to all viewports with a screen size of up to 480px. */
 @media only screen and (max-width: 480px) {
+
+    /* The selector states that the image with a class of panel will have a width of 100%. */
     img.panel {
         width: 100%
     }
 
+    /* The slecteor below states that the nav with a class of horizontal will be the 99th item in the flex order. */
     nav.horizontal {
         order: 99;
     }
 
+    /* The selector below states that the footer that is a child of the body will be the 100th and last item in the flex order. */
     body>footer {
         order: 100;
     }
@@ -61,7 +70,10 @@ article {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+/* The media query comment above applies to this as well, the only difference being that this affects screens with a pixel size of 481 or greater. */
 @media only screen and (min-width: 481px) {
+
+    /* The selector states that the ul element will be affected by the styles listed. The nowrap inside of the flex-flow property states that items within the ul will not wrap around eachother or other elements. The height property defines the height of the element.  */
     ul {
         display: -webkit-flex;
         display: flex;
@@ -70,8 +82,27 @@ article {
         height: 40px;
     }
 
+    /* The selector states that properties listed will affect the li element nested within the ul element.  */
     ul li {
         -webkit-flex: 1 1 auto;
         flex: 1 1 auto;
+    }
+
+    /* The selector states that the img element with a class of size1 will have a width of 100% */
+    img.size1 {
+        width: 100%;
+    }
+
+    /* The comment aboev applies to the rest of these  */
+    img.size2 {
+        width: 60%;
+    }
+
+    img.size3 {
+        width: 40%;
+    }
+
+    img.size4 {
+        width: 30%;
     }
 }
